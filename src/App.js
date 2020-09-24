@@ -5,7 +5,7 @@ import Artist from "./components/Artist";
 function App() {
   const [lyricsearch, setResultSearch] = useState({});
   const [lyric, setLyric] = useState("");
-  const [artistsearch, setArtistSearch] = useState([]);
+  const [artistsearch, setArtistSearch] = useState({});
 
   const { song, artist } = lyricsearch;
 

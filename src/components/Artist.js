@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Artist = ({ artistsearch }) => {
   if (Object.keys(artistsearch).length === 0) return null;
@@ -40,6 +41,10 @@ const Artist = ({ artistsearch }) => {
       </div>
     </div>
   );
+};
+
+Artist.propTypes = {
+  artistsearch: PropTypes.object.isRequired,
 };
 
 export default Artist;

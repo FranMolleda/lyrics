@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 
 const Lyric = ({ lyric }) => {
   if (lyric.length === 0) return null;
@@ -10,4 +11,7 @@ const Lyric = ({ lyric }) => {
   );
 };
 
+Lyric.propTypes = {
+  lyric: PropTypes.string.isRequired,
+};
 export default Lyric;

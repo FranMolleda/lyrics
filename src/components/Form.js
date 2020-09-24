@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Error from "./Error";
+import PropTypes from "prop-types";
+
 const Form = ({ setResultSearch }) => {
   const [search, setSearch] = useState({
     //importante que las keys se llamen igual que los "name" de cada input
@@ -77,4 +79,7 @@ const Form = ({ setResultSearch }) => {
   );
 };
 
+Form.propTypes = {
+  setResults: PropTypes.func,
+};
 export default Form;
